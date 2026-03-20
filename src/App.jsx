@@ -200,15 +200,21 @@ export default function App() {
             justifyContent: "space-between",
             marginTop: 20
           }}>
-            <button
-              onClick={() => setIndex(index - 1)}
-              disabled={index === 0}
-            >
-              Voltar
-            </button>
+<button
+  onClick={() => {
+    setIndex(index - 1);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }}
+  disabled={index === 0}
+>
+  Voltar
+</button>
           
             <button 
-  onClick={() => setIndex(index + 1)}
+  onClick={() => {
+    setIndex(index + 1);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }}
   disabled={index === steps.length - 1}
 >
   {index === steps.length - 1 ? "Fim 🖤" : "Próximo"}
