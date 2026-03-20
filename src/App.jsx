@@ -28,9 +28,9 @@ const Bats = () => (
 
     <style>{`
       @keyframes fly {
-        0% { transform: translateX(0px) translateY(0px); }
-        50% { transform: translateX(100px) translateY(-50px); }
-        100% { transform: translateX(0px) translateY(0px); }
+        0% { transform: translate(0,0); }
+        50% { transform: translate(120px,-60px); }
+        100% { transform: translate(0,0); }
       }
     `}</style>
   </div>
@@ -40,7 +40,7 @@ const steps = [
   { title: "🎉 Oi, Stephanie Cristine", content: "Esse site é pra você 😌" },
   { title: "🌎 Fato curioso", content: "Hoje é o Dia da Meteorologia... faz sentido você ser uma tempestade 🌪️❤️" },
   { title: "🎶 Coincidência?", content: "Hoje também tem conexão com Gorillaz... seu gosto nunca erra 😌" },
-  { title: "🦇 Minha morceguinha", content: "Talvez seja por isso que você brilha mais à noite... minha morceguinha 🖤" },
+  { title: "🦇 Minha morceguinha", content: "Você brilha mais quando o mundo desacelera... minha morceguinha 🖤" },
 
   { title: "🖤 Nós", content: "Se existe combinação perfeita... é isso 😏", image: "/foto1.jpg" },
   { title: "🎬 Stephanie Cristine", content: "Seu nome não é só bonito... é lendário 😌", image: "/foto2.jpg" },
@@ -49,7 +49,7 @@ const steps = [
 
   {
     title: "💬 Uma coisa importante...",
-    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério agora...\n\nVocê é incrível, meu amor.\n\nE eu quero viver muitos anos ao seu lado ❤️"
+    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê é incrível, meu amor.\n\nE eu quero viver muitos anos ao seu lado ❤️"
   },
 
   {
@@ -57,15 +57,50 @@ const steps = [
     content: "Hoje eu entendo o Ozzy Osbourne...\n\nEu faria o mesmo 😅\n\n(porque você é minha morceguinha 🖤)"
   },
 
-  { title: "🎁 Final", content: "Se arruma... você vai precisar de um celular funcionando 😉" }
+  {
+    title: "🎁 Última coisa...",
+    content: "Agora fecha isso...\n\nConfia em mim 😏"
+  }
 ];
 
 export default function App() {
   const [index, setIndex] = useState(0);
   const [accepted, setAccepted] = useState(false);
 
+  // botão recusar fugindo
+  const moveButton = (e) => {
+    const btn = e.target;
+    btn.style.position = "absolute";
+    btn.style.top = Math.random() * 80 + "%";
+    btn.style.left = Math.random() * 80 + "%";
+  };
+
+  const startExperience = () => {
+    const audio = document.getElementById("music");
+
+    audio.volume = 0;
+    audio.play();
+
+    let volume = 0;
+    const fade = setInterval(() => {
+      if (volume < 0.3) {
+        volume += 0.02;
+        audio.volume = volume;
+      } else {
+        clearInterval(fade);
+      }
+    }, 200);
+
+    setAccepted(true);
+  };
+
   return (
     <>
+      {/* 🎶 MÚSICA */}
+      <audio id="music" loop>
+        <source src="/he-is-ghost.mp3" type="audio/mpeg" />
+      </audio>
+
       {/* 🖤 POPUP */}
       {!accepted && (
         <div style={{
@@ -74,44 +109,48 @@ export default function App() {
           left: 0,
           width: "100%",
           height: "100%",
-          background: "rgba(0,0,0,0.9)",
+          background: "rgba(0,0,0,0.95)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           zIndex: 999
         }}>
-          <div style={{
-            background: "#111",
-            padding: 30,
-            borderRadius: 20,
-            maxWidth: 500,
-            color: "white",
-            textAlign: "center"
-          }}>
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            style={{
+              background: "#111",
+              padding: 30,
+              borderRadius: 20,
+              maxWidth: 500,
+              color: "white",
+              textAlign: "center"
+            }}
+          >
             <h2>🖤 Termos de Compromisso</h2>
 
             <p style={{ textAlign: "left", marginTop: 20 }}>
-              1. Ao continuar, você aceita ser oficialmente minha morceguinha 🦇<br/><br/>
-              2. Aceita receber meu amor (mesmo quando eu for meio chato 😅)<br/><br/>
-              3. Aceita continuar comigo mesmo quando eu ficar careca (isso é importante)<br/><br/>
-              4. Aceita viver momentos incríveis ao meu lado daqui pra frente<br/><br/>
-              5. Aceita que eu vou te fazer rir, te irritar e te amar ao mesmo tempo<br/><br/>
-              6. E principalmente... aceita continuar essa experiência até o final 😏
+              1. Aceita ser oficialmente minha morceguinha 🦇<br/><br/>
+              2. Aceita meu amor (mesmo quando eu for meio chato 😅)<br/><br/>
+              3. Aceita ficar comigo mesmo quando eu ficar careca<br/><br/>
+              4. Aceita viver momentos incríveis ao meu lado<br/><br/>
+              5. Aceita rir, brigar e me amar ao mesmo tempo<br/><br/>
+              6. E aceita continuar essa experiência até o final 😏
             </p>
 
-            <div style={{ marginTop: 20 }}>
-              <button onClick={() => setAccepted(true)}>
+            <div style={{ marginTop: 20, position: "relative", height: 50 }}>
+              <button onClick={startExperience}>
                 ✅ Aceito
               </button>
 
               <button
-                onClick={() => alert("Opção inválida 😏")}
+                onMouseEnter={moveButton}
                 style={{ marginLeft: 10 }}
               >
                 ❌ Recusar
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       )}
 
