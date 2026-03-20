@@ -9,7 +9,8 @@ const Bats = () => (
     width: "100%",
     height: "100%",
     pointerEvents: "none",
-    overflow: "hidden"
+    overflow: "hidden",
+    zIndex: 0
   }}>
     {[...Array(8)].map((_, i) => (
       <div
@@ -44,7 +45,8 @@ const Ghosts = () => (
     width: "100%",
     height: "100%",
     pointerEvents: "none",
-    overflow: "hidden"
+    overflow: "hidden",
+    zIndex: 0
   }}>
     {[...Array(6)].map((_, i) => (
       <div
@@ -232,7 +234,9 @@ export default function App() {
             padding: 30,
             borderRadius: 20,
             maxWidth: 500,
-            textAlign: "center"
+            textAlign: "center",
+            position: "relative",
+            zIndex: 2,
           }}
         >
           <h1>{steps[index].title}</h1>
