@@ -269,15 +269,40 @@ export default function App() {
             <button
   onClick={() => {
 
-    // 👉 PULA PRO REFRÃO
-    if (index === steps.length - 3) {
-      const audio = document.getElementById("music");
-      audio.currentTime = 155; // ajuste fino depois
+    const audio = document.getElementById("music");
+
+    // 🎧 COMEÇA A BAIXAR ANTES
+    if (index === steps.length - 4) {
+      let volume = audio.volume;
+
+      const fadeDown = setInterval(() => {
+        if (volume > 0.05) {
+          volume -= 0.02;
+          audio.volume = volume;
+        } else {
+          clearInterval(fadeDown);
+        }
+      }, 200);
     }
 
-    // fade out no último
+    // 🎶 PULA PRO REFRÃO + SOBE DE NOVO
+    if (index === steps.length - 3) {
+      audio.currentTime = 136; // ajuste fino depois
+
+      let volume = audio.volume;
+
+      const fadeUp = setInterval(() => {
+        if (volume < 0.3) {
+          volume += 0.02;
+          audio.volume = volume;
+        } else {
+          clearInterval(fadeUp);
+        }
+      }, 200);
+    }
+
+    // 🎬 FADE OUT FINAL
     if (index === steps.length - 2) {
-      const audio = document.getElementById("music");
       let volume = audio.volume;
 
       const fadeOut = setInterval(() => {
