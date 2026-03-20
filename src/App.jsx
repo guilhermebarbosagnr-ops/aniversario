@@ -9,7 +9,7 @@ const Bats = () => (
     width: "100%",
     height: "100%",
     pointerEvents: "none",
-    overflow: "hidden"  
+    overflow: "hidden"
   }}>
     {[...Array(8)].map((_, i) => (
       <div
@@ -37,20 +37,45 @@ const Bats = () => (
 );
 
 const steps = [
-  { title: "🎉 Stephanie Cristine, há 24 anos atrás seus pais faziam história", content: "E site é para marcar uma data tão especial 🖤" },
-  { title: "🌎 Fato curioso sobre o seu dia", content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão ? Tai um bom nome para um ... Furacão Stephanie, mas diferente de um você só bagunça meu coração 🌪️🖤" },
-  { title: "🦇 Morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole 🖤" },
-  { title: "🖤 Gostosa", content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais, mas acho que se eles vissem as nossas iam ficar com inveja 😏", image: "/foto1.jpg" },
-  { title: "🎬 Cristine", content: "Esse nome te representa tão bem...\n\nIntensa e obsessiva \n\nImpossível de ignorar \n\nMeio perigosa as vezes 🔪 \n\nAlém de ser um carro bonito pra caralho \n\nEu não trocaria você por nada ! 🖤 ", image: "/foto2.jpg" },
-  { title: "😴 Fofinha", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho 🖤", image: "/foto3.jpg" },
-  { title: "📸 Você é Incrivel", content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser obcecado em você, tenho certeza que poucas pessoas podem dizer que já ganham isso de presente", image: "/foto4.jpg" },
+  {
+    title: "🎉 Stephanie Cristine, há 24 anos seus pais faziam história",
+    content: "Esse site é para marcar uma data tão especial 🖤"
+  },
+  {
+    title: "🌎 Fato curioso sobre o seu dia",
+    content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão? Tá aí um bom nome... Furacão Stephanie, mas diferente de um você só bagunça meu coração 🌪️🖤"
+  },
+  {
+    title: "🦇 Morceguinha",
+    content: "Você é uma pessoa curiosa, misteriosa e incrível... adoro quando você está de preto. Agora eu entendo o Ozzy, eu também cairia de boca se te visse por aí 🖤"
+  },
+  {
+    title: "🖤 Gostosa",
+    content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais. Mas acho que se eles vissem as nossas iam ficar com inveja 😏",
+    image: "/foto1.jpg"
+  },
+  {
+    title: "🎬 Cristine",
+    content: "Esse nome te representa tão bem...\n\nIntensa e obsessiva\n\nImpossível de ignorar\n\nMeio perigosa às vezes 🔪\n\nAlém de ser um carro bonito pra caralho\n\nEu não trocaria você por nada! 🖤",
+    image: "/foto2.jpg"
+  },
+  {
+    title: "😴 Fofinha",
+    content: "Incrível como você consegue ser um mix de tudo que eu sempre quis... e ainda dormir que nem um anjinho 🖤",
+    image: "/foto3.jpg"
+  },
+  {
+    title: "📸 Você é incrível",
+    content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser completamente obcecado em você 🖤",
+    image: "/foto4.jpg"
+  },
   {
     title: "💬 Uma coisa importante...",
-    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê tem mudado minha vida, dado sentido a ela e tem me feito querer viver\n\nEu amo cada parte de você, seu cabelo, seus olhos castanhos, seu olhar, seu sorriso, seu rostinho, cada pedacinho.\n\nE eu quero viver muitos anos ao seu lado, tenho pena de quem deixou você escapar, e não te valorizou como você merece 🖤"
+    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê tem mudado minha vida, dado sentido a ela e tem me feito querer viver.\n\nEu amo cada parte de você.\n\nE eu quero viver muitos anos ao seu lado 🖤"
   },
   {
     title: "🎁 Terminou por aqui",
-    content: "Agora vou pedir para você olhar para mim e fechar os olhos... "
+    content: "Agora olha pra mim...\n\nE fecha os olhos 😏"
   }
 ];
 
@@ -58,7 +83,6 @@ export default function App() {
   const [index, setIndex] = useState(0);
   const [accepted, setAccepted] = useState(false);
 
-  // botão recusar fugindo
   const moveButton = (e) => {
     const btn = e.target;
     btn.style.position = "absolute";
@@ -70,7 +94,7 @@ export default function App() {
     const audio = document.getElementById("music");
 
     audio.volume = 0;
-    audio.play();
+    audio.play().catch(() => {});
 
     let volume = 0;
     const fade = setInterval(() => {
@@ -87,12 +111,10 @@ export default function App() {
 
   return (
     <>
-      {/* 🎶 MÚSICA */}
       <audio id="music" loop>
         <source src="/he-is-ghost.mp3" type="audio/mpeg" />
       </audio>
 
-      {/* 🖤 POPUP */}
       {!accepted && (
         <div style={{
           position: "fixed",
@@ -122,30 +144,29 @@ export default function App() {
 
             <p style={{ textAlign: "left", marginTop: 20 }}>
               1. Aceita ser oficialmente minha morceguinha 🦇<br/><br/>
-              2. Aceita minhas personalidades 🤪 <br/><br/>
+              2. Aceita minhas personalidades 🤪<br/><br/>
               3. Aceita ficar comigo mesmo quando eu ficar careca 👨🏼‍🦲<br/><br/>
               4. Aceita viver momentos incríveis ao meu lado, e péssimos também<br/><br/>
               5. Aceita rir, brigar e me amar ao mesmo tempo<br/><br/>
               6. E aceita continuar essa experiência até o final de nossas vidas
             </p>
+
             <div style={{
-  marginTop: 20,
-  padding: 10,
-  borderRadius: 10,
-  background: "rgba(255,255,255,0.05)",
-  fontSize: "14px"
-}}>
-  🔊 Aumente o volume do seu celular antes de continuar...<br/><br/>
-</div>
+              marginTop: 20,
+              padding: 10,
+              borderRadius: 10,
+              background: "rgba(255,255,255,0.05)",
+              fontSize: "14px"
+            }}>
+              🔊 Aumente o volume do seu celular...
+            </div>
+
             <div style={{ marginTop: 20, position: "relative", height: 50 }}>
               <button onClick={startExperience}>
                 ✅ Aceito
               </button>
 
-              <button
-                onMouseEnter={moveButton}
-                style={{ marginLeft: 10 }}
-              >
+              <button onMouseEnter={moveButton} style={{ marginLeft: 10 }}>
                 ❌ Recusar
               </button>
             </div>
@@ -153,7 +174,6 @@ export default function App() {
         </div>
       )}
 
-      {/* 🦇 SITE */}
       <div style={{
         minHeight: "100vh",
         display: "flex",
@@ -198,36 +218,51 @@ export default function App() {
             justifyContent: "space-between",
             marginTop: 20
           }}>
-<button
-  onClick={() => {
-    setIndex(index - 1);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }}
-  disabled={index === 0}
->
-  Voltar
-</button>
-          
-            <button 
-  onClick={() => {
-    setIndex(index + 1);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }}
-  disabled={index === steps.length - 1}
->
-  {index === steps.length - 1 ? "Fim 🖤" : "Próximo"}
-</button>
+            <button
+              onClick={() => {
+                setIndex(index - 1);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              disabled={index === 0}
+            >
+              Voltar
+            </button>
+
+            <button
+              onClick={() => {
+                if (index === steps.length - 2) {
+                  const audio = document.getElementById("music");
+                  let volume = audio.volume;
+
+                  const fadeOut = setInterval(() => {
+                    if (volume > 0.05) {
+                      volume -= 0.02;
+                      audio.volume = volume;
+                    } else {
+                      clearInterval(fadeOut);
+                    }
+                  }, 200);
+                }
+
+                setIndex(index + 1);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              disabled={index === steps.length - 1}
+            >
+              {index === steps.length - 1 ? "Fim 🖤" : "Próximo"}
+            </button>
           </div>
+
           {index === 0 && (
-  <p style={{
-    marginTop: 10,
-    fontSize: "12px",
-    opacity: 0.7
-  }}>
-    Atenção ⚠️ botão de voltar está desativado, você concordou com os termos<br/>
-    Agora não tem mais volta 🖤
-  </p>
-)}  
+            <p style={{
+              marginTop: 10,
+              fontSize: "12px",
+              opacity: 0.7
+            }}>
+              Atenção ⚠️ botão de voltar está desativado...<br/>
+              Agora não tem mais volta 🖤
+            </p>
+          )}
         </motion.div>
       </div>
     </>
