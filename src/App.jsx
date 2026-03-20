@@ -287,7 +287,7 @@ export default function App() {
 
     // 🎶 PULA PRO REFRÃO + SOBE DE NOVO
     if (index === steps.length - 3) {
-      audio.currentTime = 136; // ajuste fino depois
+      audio.currentTime = 156; // ajuste fino depois
 
       let volume = audio.volume;
 
