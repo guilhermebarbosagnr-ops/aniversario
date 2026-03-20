@@ -137,7 +137,16 @@ export default function App() {
               5. Aceita rir, brigar e me amar ao mesmo tempo<br/><br/>
               6. E aceita continuar essa experiência até o final 😏
             </p>
-
+            <div style={{
+  marginTop: 20,
+  padding: 10,
+  borderRadius: 10,
+  background: "rgba(255,255,255,0.05)",
+  fontSize: "14px"
+}}>
+  🔊 Aumente o volume do seu celular antes de continuar...<br/><br/>
+  Porque o show vai começar 😏🖤
+</div>
             <div style={{ marginTop: 20, position: "relative", height: 50 }}>
               <button onClick={startExperience}>
                 ✅ Aceito
