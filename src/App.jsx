@@ -41,9 +41,9 @@ const steps = [
     title: "🎉 Stephanie Cristine, há 24 anos seus pais faziam história",
     content: "Esse site é para marcar uma data tão especial 🖤"
   },
-  {
+  { 
     title: "🌎 Fato curioso sobre o seu dia",
-    content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão? Tá aí um bom nome... Furacão Stephanie, mas diferente de um você só bagunça meu coração 🌪️🖤"
+    content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão? Tá aí um bom nome... Furacão Stephanie, mas diferente de um, você só bagunça meu coração 🌪️🖤"
   },
   {
     title: "🦇 Morceguinha",
