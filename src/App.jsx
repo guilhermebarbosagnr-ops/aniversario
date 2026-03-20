@@ -109,8 +109,12 @@ const steps = [
     content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê tem mudado minha vida, dado sentido a ela e tem me feito querer viver.\n\nEu amo cada parte de você.\n\nE eu quero viver muitos anos ao seu lado 🖤"
   },
   {
-    title: "👻 Última coisa...",
-    content: "If you have ghosts...\n\nYou have everything.\n\n\nAnd somehow...\n\nI have you 🖤\n\n\nAgora olha pra mim...\n\nE fecha os olhos 😏"  
+    title: "👻 If you have ghosts...",
+    content: "You have everything.\n\n\nAnd somehow...\n\nI have you 🖤"  
+  },
+  {
+    title: "🎁 Terminou por aqui",
+    content: "Agora olha pra mim...\n\nE fecha os olhos 😏"
   }
 ];
 
