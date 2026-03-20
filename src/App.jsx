@@ -42,16 +42,16 @@ const steps = [
   { title: "🎶 Coincidência", content: "Estava pesquisando algumas coisas, e descobri que você faz aniversário no mesmo dia do Damon Albarn do Gorillaz kkkkkk tenho certeza que isso mudou sua vida" },
   { title: "🦇 Minha morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole 🖤" },
   { title: "🖤 Gostosa", content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais 😏", image: "/foto1.jpg" },
-  { title: "🎬 Cristine", content: "Esse nome te representa tão bem...\n\nIntensa e Obcessiva \n\nImpossível de ignorar \n\nMeia perigosa as vezes 🔪 \n\nAlém de ser um carro bonito pra caralho \n\nMas mesmo assim... \n\nEu não trocaria você por nada ! 🖤 ", image: "/foto2.jpg" },
-  { title: "😴 Minha paz", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho ❤️", image: "/foto3.jpg" },
+  { title: "🎬 Cristine", content: "Esse nome te representa tão bem...\n\nIntensa e Obcessiva \n\nImpossível de ignorar \n\nMeia perigosa as vezes 🔪 \n\nAlém de ser um carro bonito pra caralho \n\nEu não trocaria você por nada ! 🖤 ", image: "/foto2.jpg" },
+  { title: "😴 Minha paz", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho 🖤", image: "/foto3.jpg" },
   { title: "📸 Você é Incrivel", content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser obcecado em você", image: "/foto4.jpg" },
   {
     title: "💬 Uma coisa importante...",
-    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê é incrível, meu amor.\n\nE eu quero viver muitos anos ao seu lado, tenho pena de quem deixou você escapar, e não te valorizou como você merece 🖤"
+    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê tem mudado minha vida, dado sentido a ela e tem me feito querer viver\n\nEu amo cada parte de você, seu cabelo, seus olhos castanhos, seu olhar, seu sorriso, seu rostinho, cada pedacinho.\n\nE eu quero viver muitos anos ao seu lado, tenho pena de quem deixou você escapar, e não te valorizou como você merece 🖤"
   },
   {
-    title: "🎁 Última coisa, ou melhor duas...",
-    content: "Agora fecha isso...\n\nConfia em mim 😏"
+    title: "🎁 Chegou a hora de te entregar um presentinho",
+    content: "Agora fecha isso... 😏\n\n"
   }
 ];
 
