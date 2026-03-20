@@ -38,11 +38,11 @@ const Bats = () => (
 
 const steps = [
   { title: "🎉 Stephanie Cristine, à 24 anos atrás seus pais faziam história", content: "Esse site é um dos meus presentes pra você 😌" },
-  { title: "🌎 Fato curioso", content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão ? Tai um bom nome para um ... Furacão Stephanie 🌪️❤️" },
+  { title: "🌎 Fato curioso", content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão ? Tai um bom nome para um ... Furacão Stephanie 🌪️🖤" },
   { title: "🎶 Coincidência?", content: "Estava pesquisando algumas coisas, e descobri que você faz aniversário no mesmo dia do Damon Albarn do Gorillaz kkkkkk tenho certeza que isso mudou sua vida" },
-  { title: "🦇 Minha morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole minha morceguinha 🖤" },
+  { title: "🦇 Minha morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole 🖤" },
   { title: "🖤 Gostosa", content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais 😏", image: "/foto1.jpg" },
-  { title: "🎬 Cristine", content: "Acho que vou colocar esse nome no meu carro, já que você não deixa colocar na nossa filha ... 😌", image: "/foto2.jpg" },
+  { title: "🎬 Cristine", content: "Agora eu entendo o filme, esse nome te representa tão bem ...  Além de ser um carro bonito pra caralho \n\n Intensa e Obcessiva \n\n Impossível de ignorar \n\n E meia perigosa as vezes 🔪 \n\n Mas mesmo assim... \n\n Eu não trocaria você por nada. 🖤 ", image: "/foto2.jpg" },
   { title: "😴 Minha paz", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho ❤️", image: "/foto3.jpg" },
   { title: "📸 Você é Incrivel", content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser obcecado em você", image: "/foto4.jpg" },
   {
@@ -50,7 +50,7 @@ const steps = [
     content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê é incrível, meu amor.\n\nE eu quero viver muitos anos ao seu lado, tenho pena de quem deixou você escapar, e não te valorizou como você merece ❤️"
   },
   {
-    title: "🎁 Última coisa...",
+    title: "🎁 Última coisa, ou melhor duas...",
     content: "Agora fecha isso...\n\nConfia em mim 😏"
   }
 ];
