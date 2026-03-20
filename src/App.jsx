@@ -207,7 +207,7 @@ export default function App() {
               Voltar
             </button>
           
-            <button
+            <button 
   onClick={() => setIndex(index + 1)}
   disabled={index === steps.length - 1}
 >
