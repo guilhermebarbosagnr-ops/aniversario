@@ -37,12 +37,12 @@ const Bats = () => (
 );
 
 const steps = [
-  { title: "🎉 Stephanie Cristine, à 24 anos atrás seus pais faziam história", content: "Esse site é um dos meus presentes pra você 😌" },
+  { title: "🎉 Stephanie Cristine, há 24 anos atrás seus pais faziam história", content: "Esse site é um dos meus presentes pra você 😌" },
   { title: "🌎 Fato curioso", content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão ? Tai um bom nome para um ... Furacão Stephanie 🌪️🖤" },
   { title: "🎶 Coincidência", content: "Estava pesquisando algumas coisas, e descobri que você faz aniversário no mesmo dia do Damon Albarn do Gorillaz kkkkkk tenho certeza que isso mudou sua vida" },
   { title: "🦇 Minha morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole 🖤" },
   { title: "🖤 Gostosa", content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais 😏", image: "/foto1.jpg" },
-  { title: "🎬 Cristine", content: "Esse nome te representa tão bem...\n\nIntensa e Obcessiva \n\nImpossível de ignorar \n\nMeia perigosa as vezes 🔪 \n\nAlém de ser um carro bonito pra caralho \n\nEu não trocaria você por nada ! 🖤 ", image: "/foto2.jpg" },
+  { title: "🎬 Cristine", content: "Esse nome te representa tão bem...\n\nIntensa e obsessiva \n\nImpossível de ignorar \n\nMeio perigosa as vezes 🔪 \n\nAlém de ser um carro bonito pra caralho \n\nEu não trocaria você por nada ! 🖤 ", image: "/foto2.jpg" },
   { title: "😴 Minha paz", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho 🖤", image: "/foto3.jpg" },
   { title: "📸 Você é Incrivel", content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser obcecado em você", image: "/foto4.jpg" },
   {
@@ -51,7 +51,7 @@ const steps = [
   },
   {
     title: "🎁 Chegou a hora de te entregar um presentinho",
-    content: "Agora fecha isso... 😏\n\n"
+    content: "Agora fecha isso...\n\nE olha pra mim 😏"
   }
 ];
 
@@ -161,7 +161,7 @@ export default function App() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(135deg,#1a1a1a,#3a0d2e)",
+        background: "linear-gradient(135deg,#0d0d0d,#2a0a1f)",
         color: "white"
       }}>
         <Bats />
@@ -208,11 +208,11 @@ export default function App() {
             </button>
           
             <button
-              onClick={() => setIndex(index + 1)}
-              disabled={index === steps.length - 1}
-            >
-              Próximo
-            </button>
+  onClick={() => setIndex(index + 1)}
+  disabled={index === steps.length - 1}
+>
+  {index === steps.length - 1 ? "Fim 🖤" : "Próximo"}
+</button>
           </div>
           {index === 0 && (
   <p style={{
