@@ -114,7 +114,7 @@ const steps = [
   },
   {
     title: "🎁 Terminou por aqui",
-    content: "Agora olha pra mim...\n\nE fecha os olhos 😏"
+    content: "Agora olha pra mim 👀...\n\nE fecha os olhos 🙈 "
   }
 ];
 
@@ -266,30 +266,37 @@ export default function App() {
             >
               Voltar
             </button>
-
             <button
-              onClick={() => {
-                if (index === steps.length - 2) {
-                  const audio = document.getElementById("music");
-                  let volume = audio.volume;
+  onClick={() => {
 
-                  const fadeOut = setInterval(() => {
-                    if (volume > 0.05) {
-                      volume -= 0.02;
-                      audio.volume = volume;
-                    } else {
-                      clearInterval(fadeOut);
-                    }
-                  }, 200);
-                }
+    // 👉 PULA PRO REFRÃO
+    if (index === steps.length - 3) {
+      const audio = document.getElementById("music");
+      audio.currentTime = 155; // ajuste fino depois
+    }
 
-                setIndex(index + 1);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              disabled={index === steps.length - 1}
-            >
-              {index === steps.length - 1 ? "Fim 🖤" : "Próximo"}
-            </button>
+    // fade out no último
+    if (index === steps.length - 2) {
+      const audio = document.getElementById("music");
+      let volume = audio.volume;
+
+      const fadeOut = setInterval(() => {
+        if (volume > 0.05) {
+          volume -= 0.02;
+          audio.volume = volume;
+        } else {
+          clearInterval(fadeOut);
+        }
+      }, 200);
+    }
+
+    setIndex(index + 1);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }}
+  disabled={index === steps.length - 1}
+>
+  {index === steps.length - 1 ? "Fim 🖤" : "Próximo"}
+</button>
           </div>
 
           {index === 0 && (
