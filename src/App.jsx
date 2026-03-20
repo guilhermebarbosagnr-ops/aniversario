@@ -37,21 +37,20 @@ const Bats = () => (
 );
 
 const steps = [
-  { title: "🎉 Stephanie Cristine, há 24 anos atrás seus pais faziam história", content: "Esse site é um dos meus presentes pra você 😌" },
-  { title: "🌎 Fato curioso", content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão ? Tai um bom nome para um ... Furacão Stephanie 🌪️🖤" },
-  { title: "🎶 Coincidência", content: "Estava pesquisando algumas coisas, e descobri que você faz aniversário no mesmo dia do Damon Albarn do Gorillaz kkkkkk tenho certeza que isso mudou sua vida" },
-  { title: "🦇 Minha morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole 🖤" },
-  { title: "🖤 Gostosa", content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais 😏", image: "/foto1.jpg" },
+  { title: "🎉 Stephanie Cristine, há 24 anos atrás seus pais faziam história", content: "E site é para marcar uma data tão especial 🖤" },
+  { title: "🌎 Fato curioso sobre o seu dia", content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão ? Tai um bom nome para um ... Furacão Stephanie, mas diferente de um você só bagunça meu coração 🌪️🖤" },
+  { title: "🦇 Morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole 🖤" },
+  { title: "🖤 Gostosa", content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais, mas acho que se eles vissem as nossas iam ficar com inveja 😏", image: "/foto1.jpg" },
   { title: "🎬 Cristine", content: "Esse nome te representa tão bem...\n\nIntensa e obsessiva \n\nImpossível de ignorar \n\nMeio perigosa as vezes 🔪 \n\nAlém de ser um carro bonito pra caralho \n\nEu não trocaria você por nada ! 🖤 ", image: "/foto2.jpg" },
-  { title: "😴 Minha paz", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho 🖤", image: "/foto3.jpg" },
-  { title: "📸 Você é Incrivel", content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser obcecado em você", image: "/foto4.jpg" },
+  { title: "😴 Fofinha", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho 🖤", image: "/foto3.jpg" },
+  { title: "📸 Você é Incrivel", content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser obcecado em você, tenho certeza que poucas pessoas podem dizer que já ganham isso de presente", image: "/foto4.jpg" },
   {
     title: "💬 Uma coisa importante...",
     content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê tem mudado minha vida, dado sentido a ela e tem me feito querer viver\n\nEu amo cada parte de você, seu cabelo, seus olhos castanhos, seu olhar, seu sorriso, seu rostinho, cada pedacinho.\n\nE eu quero viver muitos anos ao seu lado, tenho pena de quem deixou você escapar, e não te valorizou como você merece 🖤"
   },
   {
-    title: "🎁 Chegou a hora de te entregar um presentinho",
-    content: "Agora fecha isso...\n\nE olha pra mim 😏"
+    title: "🎁 Terminou por aqui",
+    content: "Agora vou pedir para você olhar para mim e fechar os olhos... "
   }
 ];
 
@@ -123,9 +122,9 @@ export default function App() {
 
             <p style={{ textAlign: "left", marginTop: 20 }}>
               1. Aceita ser oficialmente minha morceguinha 🦇<br/><br/>
-              2. Aceita meu amor (mesmo quando eu for meio chato 😅)<br/><br/>
-              3. Aceita ficar comigo mesmo quando eu ficar careca<br/><br/>
-              4. Aceita viver momentos incríveis ao meu lado<br/><br/>
+              2. Aceita minhas personalidades 🤪 <br/><br/>
+              3. Aceita ficar comigo mesmo quando eu ficar careca 👨🏼‍🦲<br/><br/>
+              4. Aceita viver momentos incríveis ao meu lado, e péssimos também<br/><br/>
               5. Aceita rir, brigar e me amar ao mesmo tempo<br/><br/>
               6. E aceita continuar essa experiência até o final de nossas vidas
             </p>
@@ -137,7 +136,6 @@ export default function App() {
   fontSize: "14px"
 }}>
   🔊 Aumente o volume do seu celular antes de continuar...<br/><br/>
-  Porque o show vai começar 😏🖤
 </div>
             <div style={{ marginTop: 20, position: "relative", height: 50 }}>
               <button onClick={startExperience}>
@@ -226,7 +224,7 @@ export default function App() {
     fontSize: "12px",
     opacity: 0.7
   }}>
-    Isso mesmo... o botão de voltar está desativado 😏<br/>
+    Atenção ⚠️ botão de voltar está desativado, você concordou com os termos<br/>
     Agora não tem mais volta 🖤
   </p>
 )}  
