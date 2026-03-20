@@ -36,6 +36,41 @@ const Bats = () => (
   </div>
 );
 
+const Ghosts = () => (
+  <div style={{
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    pointerEvents: "none",
+    overflow: "hidden"
+  }}>
+    {[...Array(6)].map((_, i) => (
+      <div
+        key={i}
+        style={{
+          position: "absolute",
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          fontSize: `${20 + Math.random() * 20}px`,
+          animation: `float ${6 + Math.random() * 4}s ease-in-out infinite`,
+        }}
+      >
+        👻
+      </div>
+    ))}
+
+    <style>{`
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-40px); }
+        100% { transform: translateY(0px); }
+      }
+    `}</style>
+  </div>
+);
+
 const steps = [
   {
     title: "🎉 Stephanie Cristine, há 24 anos seus pais faziam história",
@@ -74,8 +109,8 @@ const steps = [
     content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê tem mudado minha vida, dado sentido a ela e tem me feito querer viver.\n\nEu amo cada parte de você.\n\nE eu quero viver muitos anos ao seu lado 🖤"
   },
   {
-    title: "🎁 Terminou por aqui",
-    content: "Agora olha pra mim...\n\nE fecha os olhos 😏"
+    title: "👻 Última coisa...",
+    content: "If you have ghosts...\n\nYou have everything.\n\n\nAnd somehow...\n\nI have you 🖤\n\n\nAgora olha pra mim...\n\nE fecha os olhos 😏"  
   }
 ];
 
@@ -183,7 +218,7 @@ export default function App() {
         color: "white"
       }}>
         <Bats />
-
+        <Ghosts />
         <motion.div
           key={index}
           initial={{ opacity: 0, y: 50 }}
