@@ -9,7 +9,7 @@ const Bats = () => (
     width: "100%",
     height: "100%",
     pointerEvents: "none",
-    overflow: "hidden"
+    overflow: "hidden"  
   }}>
     {[...Array(8)].map((_, i) => (
       <div
@@ -214,7 +214,16 @@ export default function App() {
             >
               Voltar
             </button>
-
+            {index === 0 && (
+  <p style={{
+    marginTop: 10,
+    fontSize: "12px",
+    opacity: 0.7
+  }}>
+    Isso mesmo... o botão de voltar está desativado 😏<br/>
+    Agora não tem mais volta 🖤
+  </p>
+)}
             <button
               onClick={() => setIndex(index + 1)}
               disabled={index === steps.length - 1}
