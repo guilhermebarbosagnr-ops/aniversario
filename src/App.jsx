@@ -214,7 +214,15 @@ export default function App() {
             >
               Voltar
             </button>
-            {index === 0 && (
+          
+            <button
+              onClick={() => setIndex(index + 1)}
+              disabled={index === steps.length - 1}
+            >
+              Próximo
+            </button>
+          </div>
+          {index === 0 && (
   <p style={{
     marginTop: 10,
     fontSize: "12px",
@@ -224,13 +232,6 @@ export default function App() {
     Agora não tem mais volta 🖤
   </p>
 )}
-            <button
-              onClick={() => setIndex(index + 1)}
-              disabled={index === steps.length - 1}
-            >
-              Próximo
-            </button>
-          </div>
         </motion.div>
       </div>
     </>
