@@ -37,26 +37,18 @@ const Bats = () => (
 );
 
 const steps = [
-  { title: "🎉 Oi, Stephanie Cristine", content: "Esse site é pra você 😌" },
-  { title: "🌎 Fato curioso", content: "Hoje é o Dia da Meteorologia... faz sentido você ser uma tempestade 🌪️❤️" },
-  { title: "🎶 Coincidência?", content: "Hoje também tem conexão com Gorillaz... seu gosto nunca erra 😌" },
-  { title: "🦇 Minha morceguinha", content: "Você brilha mais quando o mundo desacelera... minha morceguinha 🖤" },
-
-  { title: "🖤 Nós", content: "Se existe combinação perfeita... é isso 😏", image: "/foto1.jpg" },
-  { title: "🎬 Stephanie Cristine", content: "Seu nome não é só bonito... é lendário 😌", image: "/foto2.jpg" },
-  { title: "😴 Minha paz", content: "E você também é isso aqui ❤️", image: "/foto3.jpg" },
-  { title: "📸 Nós de verdade", content: "Se for com você, já vale a pena.", image: "/foto4.jpg" },
-
+  { title: "🎉 Stephanie Cristine, à 24 anos atrás seus pais faziam história", content: "Esse site é um dos meus presentes pra você 😌" },
+  { title: "🌎 Fato curioso", content: "Você faz aniversário no dia Mundial da Meteorologia... Será por isso que você é esse furacão ? Tai um bom nome para um ... Furacão Stephanie 🌪️❤️" },
+  { title: "🎶 Coincidência?", content: "Estava pesquisando algumas coisas, e descobri que você faz aniversário no mesmo dia do Damon Albarn do Gorillaz kkkkkk tenho certeza que isso mudou sua vida" },
+  { title: "🦇 Minha morceguinha", content: "Você é uma pessoa curiosa, misteriosa, e incrivel, adoro quando você está de preto, agora sim eu entendo o Ozzy, eu também cairia de boca se visse você por ai dando mole minha morceguinha 🖤" },
+  { title: "🖤 Gostosa", content: "Se existe combinação perfeita... com certeza é o resultado da foda dos seus pais 😏", image: "/foto1.jpg" },
+  { title: "🎬 Cristine", content: "Acho que vou colocar esse nome no meu carro, já que você não deixa colocar na nossa filha ... 😌", image: "/foto2.jpg" },
+  { title: "😴 Minha paz", content: "Incrível como você consegue ser um mix de tudo que eu sempre quis, e ainda dormir que nem um anjinho ❤️", image: "/foto3.jpg" },
+  { title: "📸 Você é Incrivel", content: "Se um dia você duvidar do quão boa você é, volte aqui e veja o quanto você consegue fazer alguém ser obcecado em você", image: "/foto4.jpg" },
   {
     title: "💬 Uma coisa importante...",
-    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê é incrível, meu amor.\n\nE eu quero viver muitos anos ao seu lado ❤️"
+    content: "Muito clichê falar que o aniversário é seu, mas no fim eu que ganhei o presente, né? kkkkk\n\nMas falando sério...\n\nVocê é incrível, meu amor.\n\nE eu quero viver muitos anos ao seu lado, tenho pena de quem deixou você escapar, e não te valorizou como você merece ❤️"
   },
-
-  {
-    title: "🦇 Confissão importante",
-    content: "Hoje eu entendo o Ozzy Osbourne...\n\nEu faria o mesmo 😅\n\n(porque você é minha morceguinha 🖤)"
-  },
-
   {
     title: "🎁 Última coisa...",
     content: "Agora fecha isso...\n\nConfia em mim 😏"
@@ -135,7 +127,7 @@ export default function App() {
               3. Aceita ficar comigo mesmo quando eu ficar careca<br/><br/>
               4. Aceita viver momentos incríveis ao meu lado<br/><br/>
               5. Aceita rir, brigar e me amar ao mesmo tempo<br/><br/>
-              6. E aceita continuar essa experiência até o final 😏
+              6. E aceita continuar essa experiência até o final de nossas vidas
             </p>
             <div style={{
   marginTop: 20,
@@ -231,7 +223,7 @@ export default function App() {
     Isso mesmo... o botão de voltar está desativado 😏<br/>
     Agora não tem mais volta 🖤
   </p>
-)}
+)}  
         </motion.div>
       </div>
     </>
