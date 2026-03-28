@@ -75,7 +75,7 @@ const Ghosts = () => (
 
 const steps = [
   {
-    title: "🎉 Stephanie Cristine, há 24 anos seus pais faziam história",
+    title: "🎉 Stephanie Christine, há 24 anos seus pais faziam história",
     content: "Esse site é para marcar uma data tão especial 🖤"
   },
   { 
@@ -92,7 +92,7 @@ const steps = [
     image: "/foto1.jpg"
   },
   {
-    title: "🎬 Cristine",
+    title: "🎬 Christine",
     content: "Esse nome te representa tão bem...\n\nIntensa e obsessiva\n\nImpossível de ignorar\n\nMeio perigosa às vezes 🔪\n\nAlém de ser um carro bonito pra caralho\n\nEu não trocaria você por nada! 🖤",
     image: "/foto2.jpg"
   },
